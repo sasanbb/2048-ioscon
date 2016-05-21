@@ -1,3 +1,5 @@
+[![BuddyBuild](https://preproddashboard.buddybuild.com/api/statusImage?appID=573fd6a69d91b20100a1c863&branch=master&build=latest)](https://preproddashboard.buddybuild.com/apps/573fd6a69d91b20100a1c863/build/latest)
+
 # 2048
 
 This is a derivative and the iOS version of the game 2048. In the very unlikely case that you don't know what it is, you can check it out [here](https://github.com/gabrielecirulli/2048).
