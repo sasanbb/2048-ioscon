@@ -50,10 +50,9 @@ class m2048UITests: XCTestCase {
         
     }
     
-    func testSwipeThen() {
+    func testSwipeThenCrash() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
         
         let app = XCUIApplication()
         let element = app.otherElements.containing(.staticText, identifier:"2048").element
@@ -61,14 +60,9 @@ class m2048UITests: XCTestCase {
         element.swipeDown()
         element.swipeLeft()
         element.swipeRight()
-        element.swipeUp()
-        element.swipeDown()
-        element.swipeLeft()
-        element.swipeRight()
-        element.swipeUp()
-        element.swipeDown()
-        element.swipeLeft()
-        element.swipeRight()
+        
+        XCUIApplication().buttons["Settings"].tap()
+        XCUIDevice.shared().orientation = .faceUp
         
     }
     
