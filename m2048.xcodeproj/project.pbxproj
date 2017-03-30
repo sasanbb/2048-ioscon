@@ -31,10 +31,21 @@
 		24C4518118E265390001FCFD /* M2Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C4518018E265390001FCFD /* M2Overlay.m */; };
 		5D9771F87747C9AC6284A625 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42363629EBA69A02B0D181B2 /* CoreText.framework */; };
 		5DB26347A47D6A73708EE172 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374F52F33EE427E6164DFABE /* BuddyBuildSDK.framework */; };
+		8314CDCA1E8DB53400CAD026 /* m2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314CDC91E8DB53400CAD026 /* m2048UITests.swift */; };
 		9AC180509E130F4823298D47 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */; };
 		9C856370E6E666261EF867F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */; };
 		ADD797ED54B626E50A00684E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F4646D532224A273B48C9D /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8314CDCC1E8DB53400CAD026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2443DC4A18D662CA00C920C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2443DC5118D662CA00C920C1;
+			remoteInfo = m2048;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2443DC5218D662CA00C920C1 /* m2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = m2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +95,9 @@
 		374F52F33EE427E6164DFABE /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		42363629EBA69A02B0D181B2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		68F4646D532224A273B48C9D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8314CDC71E8DB53400CAD026 /* m2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = m2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8314CDC91E8DB53400CAD026 /* m2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = m2048UITests.swift; sourceTree = "<group>"; };
+		8314CDCB1E8DB53400CAD026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -105,6 +119,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8314CDC41E8DB53400CAD026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,6 +134,7 @@
 			children = (
 				2443DC5D18D662CA00C920C1 /* m2048 */,
 				2443DC8118D662CA00C920C1 /* m2048Tests */,
+				8314CDC81E8DB53400CAD026 /* m2048UITests */,
 				2443DC5418D662CA00C920C1 /* Frameworks */,
 				2443DC5318D662CA00C920C1 /* Products */,
 			);
@@ -122,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				2443DC5218D662CA00C920C1 /* m2048.app */,
+				8314CDC71E8DB53400CAD026 /* m2048UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +282,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8314CDC81E8DB53400CAD026 /* m2048UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8314CDC91E8DB53400CAD026 /* m2048UITests.swift */,
+				8314CDCB1E8DB53400CAD026 /* Info.plist */,
+			);
+			path = m2048UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +311,24 @@
 			productReference = 2443DC5218D662CA00C920C1 /* m2048.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8314CDC61E8DB53400CAD026 /* m2048UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8314CDCE1E8DB53400CAD026 /* Build configuration list for PBXNativeTarget "m2048UITests" */;
+			buildPhases = (
+				8314CDC31E8DB53400CAD026 /* Sources */,
+				8314CDC41E8DB53400CAD026 /* Frameworks */,
+				8314CDC51E8DB53400CAD026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8314CDCD1E8DB53400CAD026 /* PBXTargetDependency */,
+			);
+			name = m2048UITests;
+			productName = m2048UITests;
+			productReference = 8314CDC71E8DB53400CAD026 /* m2048UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,11 +336,19 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = M2;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Danqing;
 				TargetAttributes = {
 					2443DC5118D662CA00C920C1 = {
-						DevelopmentTeam = 8FLD5L9JR6;
+						DevelopmentTeam = L4FET847JL;
+						ProvisioningStyle = Automatic;
+					};
+					8314CDC61E8DB53400CAD026 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L4FET847JL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2443DC5118D662CA00C920C1;
 					};
 				};
 			};
@@ -308,6 +366,7 @@
 			projectRoot = "";
 			targets = (
 				2443DC5118D662CA00C920C1 /* m2048 */,
+				8314CDC61E8DB53400CAD026 /* m2048UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,6 +379,13 @@
 				2443DC6218D662CA00C920C1 /* InfoPlist.strings in Resources */,
 				2443DC7518D662CA00C920C1 /* Images.xcassets in Resources */,
 				2443DC6B18D662CA00C920C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8314CDC51E8DB53400CAD026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +414,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8314CDC31E8DB53400CAD026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8314CDCA1E8DB53400CAD026 /* m2048UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8314CDCD1E8DB53400CAD026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2443DC5118D662CA00C920C1 /* m2048 */;
+			targetProxy = 8314CDCC1E8DB53400CAD026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2443DC6018D662CA00C920C1 /* InfoPlist.strings */ = {
@@ -455,6 +537,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L4FET847JL;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -464,7 +548,7 @@
 				INFOPLIST_FILE = "m2048/m2048-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bb.com.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "92c7a3c8-c334-4c12-9989-0e8d2957802b";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,7 +560,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L4FET847JL;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -486,9 +572,60 @@
 				INFOPLIST_FILE = "m2048/m2048-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bb.com.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "92c7a3c8-c334-4c12-9989-0e8d2957802b";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8314CDCF1E8DB53400CAD026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L4FET847JL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = m2048UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.m2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = m2048;
+			};
+			name = Debug;
+		};
+		8314CDD01E8DB53400CAD026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L4FET847JL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = m2048UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.m2048UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = m2048;
 			};
 			name = Release;
 		};
@@ -512,6 +649,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8314CDCE1E8DB53400CAD026 /* Build configuration list for PBXNativeTarget "m2048UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8314CDCF1E8DB53400CAD026 /* Debug */,
+				8314CDD01E8DB53400CAD026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
