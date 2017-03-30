@@ -32,6 +32,9 @@
 		5D9771F87747C9AC6284A625 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42363629EBA69A02B0D181B2 /* CoreText.framework */; };
 		5DB26347A47D6A73708EE172 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374F52F33EE427E6164DFABE /* BuddyBuildSDK.framework */; };
 		8314CDCA1E8DB53400CAD026 /* m2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314CDC91E8DB53400CAD026 /* m2048UITests.swift */; };
+		8314CDD31E8DCD9C00CAD026 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD21E8DCD9C00CAD026 /* AVFoundation.framework */; };
+		8314CDD51E8DCDB300CAD026 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */; };
+		8314CDD71E8DCDBB00CAD026 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */; };
 		9AC180509E130F4823298D47 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */; };
 		9C856370E6E666261EF867F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */; };
 		ADD797ED54B626E50A00684E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F4646D532224A273B48C9D /* CoreTelephony.framework */; };
@@ -98,6 +101,9 @@
 		8314CDC71E8DB53400CAD026 /* m2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = m2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8314CDC91E8DB53400CAD026 /* m2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = m2048UITests.swift; sourceTree = "<group>"; };
 		8314CDCB1E8DB53400CAD026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8314CDD21E8DCD9C00CAD026 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -107,12 +113,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8314CDD71E8DCDBB00CAD026 /* CoreVideo.framework in Frameworks */,
+				8314CDD51E8DCDB300CAD026 /* CoreMedia.framework in Frameworks */,
+				9AC180509E130F4823298D47 /* AssetsLibrary.framework in Frameworks */,
+				8314CDD31E8DCD9C00CAD026 /* AVFoundation.framework in Frameworks */,
 				2443DC5818D662CA00C920C1 /* CoreGraphics.framework in Frameworks */,
 				2443DC5A18D662CA00C920C1 /* UIKit.framework in Frameworks */,
 				2443DC5C18D662CA00C920C1 /* SpriteKit.framework in Frameworks */,
 				2443DC5618D662CA00C920C1 /* Foundation.framework in Frameworks */,
 				5DB26347A47D6A73708EE172 /* BuddyBuildSDK.framework in Frameworks */,
-				9AC180509E130F4823298D47 /* AssetsLibrary.framework in Frameworks */,
 				5D9771F87747C9AC6284A625 /* CoreText.framework in Frameworks */,
 				ADD797ED54B626E50A00684E /* CoreTelephony.framework in Frameworks */,
 				9C856370E6E666261EF867F9 /* SystemConfiguration.framework in Frameworks */,
@@ -152,6 +161,9 @@
 		2443DC5418D662CA00C920C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */,
+				8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */,
+				8314CDD21E8DCD9C00CAD026 /* AVFoundation.framework */,
 				2443DC5518D662CA00C920C1 /* Foundation.framework */,
 				2443DC5718D662CA00C920C1 /* CoreGraphics.framework */,
 				2443DC5918D662CA00C920C1 /* UIKit.framework */,
@@ -590,6 +602,10 @@
 				DEVELOPMENT_TEAM = L4FET847JL;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = m2048UITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -616,6 +632,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = L4FET847JL;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = m2048UITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
