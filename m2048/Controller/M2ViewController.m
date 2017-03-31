@@ -203,4 +203,8 @@
   // Release any cached data, images, etc that aren't in use.
 }
 
++ (int)addTiles:(int)a and:(int)b {
+    return a + b;
+}
+
 @end

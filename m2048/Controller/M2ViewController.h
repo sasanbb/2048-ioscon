@@ -15,4 +15,6 @@
 
 - (void)endGame:(BOOL)won;
 
++ (int)addTiles:(int)a and:(int)b;
+
 @end

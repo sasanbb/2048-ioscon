@@ -46,6 +46,7 @@
 		8314CDE01E8DD4D200CAD026 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42363629EBA69A02B0D181B2 /* CoreText.framework */; };
 		8314CDE11E8DD4D900CAD026 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F4646D532224A273B48C9D /* CoreTelephony.framework */; };
 		8314CDE21E8DD4E500CAD026 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */; };
+		8314CE001E8E640400CAD026 /* m2048UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8314CDFF1E8E640400CAD026 /* m2048UnitTests.m */; };
 		9AC180509E130F4823298D47 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */; };
 		9C856370E6E666261EF867F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */; };
 		ADD797ED54B626E50A00684E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F4646D532224A273B48C9D /* CoreTelephony.framework */; };
@@ -53,6 +54,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		8314CDCC1E8DB53400CAD026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2443DC4A18D662CA00C920C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2443DC5118D662CA00C920C1;
+			remoteInfo = m2048;
+		};
+		8314CE021E8E640400CAD026 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2443DC4A18D662CA00C920C1 /* Project object */;
 			proxyType = 1;
@@ -116,6 +124,9 @@
 		8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		8314CDE31E8DE11900CAD026 /* m2048UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "m2048UITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8314CDFD1E8E640400CAD026 /* m2048UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = m2048UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8314CDFF1E8E640400CAD026 /* m2048UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = m2048UnitTests.m; sourceTree = "<group>"; };
+		8314CE011E8E640400CAD026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -158,6 +169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8314CDFA1E8E640400CAD026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -167,6 +185,7 @@
 				2443DC5D18D662CA00C920C1 /* m2048 */,
 				2443DC8118D662CA00C920C1 /* m2048Tests */,
 				8314CDC81E8DB53400CAD026 /* m2048UITests */,
+				8314CDFE1E8E640400CAD026 /* m2048UnitTests */,
 				2443DC5418D662CA00C920C1 /* Frameworks */,
 				2443DC5318D662CA00C920C1 /* Products */,
 			);
@@ -177,6 +196,7 @@
 			children = (
 				2443DC5218D662CA00C920C1 /* m2048.app */,
 				8314CDC71E8DB53400CAD026 /* m2048UITests.xctest */,
+				8314CDFD1E8E640400CAD026 /* m2048UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -327,6 +347,15 @@
 			path = m2048UITests;
 			sourceTree = "<group>";
 		};
+		8314CDFE1E8E640400CAD026 /* m2048UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8314CDFF1E8E640400CAD026 /* m2048UnitTests.m */,
+				8314CE011E8E640400CAD026 /* Info.plist */,
+			);
+			path = m2048UnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +394,24 @@
 			productReference = 8314CDC71E8DB53400CAD026 /* m2048UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8314CDFC1E8E640400CAD026 /* m2048UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8314CE061E8E640400CAD026 /* Build configuration list for PBXNativeTarget "m2048UnitTests" */;
+			buildPhases = (
+				8314CDF91E8E640400CAD026 /* Sources */,
+				8314CDFA1E8E640400CAD026 /* Frameworks */,
+				8314CDFB1E8E640400CAD026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8314CE031E8E640400CAD026 /* PBXTargetDependency */,
+			);
+			name = m2048UnitTests;
+			productName = m2048UnitTests;
+			productReference = 8314CDFD1E8E640400CAD026 /* m2048UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -387,6 +434,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2443DC5118D662CA00C920C1;
 					};
+					8314CDFC1E8E640400CAD026 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L4FET847JL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2443DC5118D662CA00C920C1;
+					};
 				};
 			};
 			buildConfigurationList = 2443DC4D18D662CA00C920C1 /* Build configuration list for PBXProject "m2048" */;
@@ -404,6 +457,7 @@
 			targets = (
 				2443DC5118D662CA00C920C1 /* m2048 */,
 				8314CDC61E8DB53400CAD026 /* m2048UITests */,
+				8314CDFC1E8E640400CAD026 /* m2048UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -420,6 +474,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8314CDC51E8DB53400CAD026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8314CDFB1E8E640400CAD026 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,6 +520,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8314CDF91E8E640400CAD026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8314CE001E8E640400CAD026 /* m2048UnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -466,6 +535,11 @@
 			isa = PBXTargetDependency;
 			target = 2443DC5118D662CA00C920C1 /* m2048 */;
 			targetProxy = 8314CDCC1E8DB53400CAD026 /* PBXContainerItemProxy */;
+		};
+		8314CE031E8E640400CAD026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2443DC5118D662CA00C920C1 /* m2048 */;
+			targetProxy = 8314CE021E8E640400CAD026 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -678,6 +752,54 @@
 			};
 			name = Release;
 		};
+		8314CE041E8E640400CAD026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L4FET847JL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = m2048UnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.m2048UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/m2048.app/m2048";
+			};
+			name = Debug;
+		};
+		8314CE051E8E640400CAD026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L4FET847JL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = m2048UnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.m2048UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/m2048.app/m2048";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -704,6 +826,15 @@
 			buildConfigurations = (
 				8314CDCF1E8DB53400CAD026 /* Debug */,
 				8314CDD01E8DB53400CAD026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8314CE061E8E640400CAD026 /* Build configuration list for PBXNativeTarget "m2048UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8314CE041E8E640400CAD026 /* Debug */,
+				8314CE051E8E640400CAD026 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
