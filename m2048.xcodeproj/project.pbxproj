@@ -35,6 +35,17 @@
 		8314CDD31E8DCD9C00CAD026 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD21E8DCD9C00CAD026 /* AVFoundation.framework */; };
 		8314CDD51E8DCDB300CAD026 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */; };
 		8314CDD71E8DCDBB00CAD026 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */; };
+		8314CDD81E8DD48800CAD026 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374F52F33EE427E6164DFABE /* BuddyBuildSDK.framework */; };
+		8314CDD91E8DD4A200CAD026 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */; };
+		8314CDDA1E8DD4A700CAD026 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */; };
+		8314CDDB1E8DD4AB00CAD026 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */; };
+		8314CDDC1E8DD4B300CAD026 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314CDD21E8DCD9C00CAD026 /* AVFoundation.framework */; };
+		8314CDDD1E8DD4B800CAD026 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5718D662CA00C920C1 /* CoreGraphics.framework */; };
+		8314CDDE1E8DD4C400CAD026 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5918D662CA00C920C1 /* UIKit.framework */; };
+		8314CDDF1E8DD4CA00CAD026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443DC5518D662CA00C920C1 /* Foundation.framework */; };
+		8314CDE01E8DD4D200CAD026 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42363629EBA69A02B0D181B2 /* CoreText.framework */; };
+		8314CDE11E8DD4D900CAD026 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F4646D532224A273B48C9D /* CoreTelephony.framework */; };
+		8314CDE21E8DD4E500CAD026 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */; };
 		9AC180509E130F4823298D47 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */; };
 		9C856370E6E666261EF867F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */; };
 		ADD797ED54B626E50A00684E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F4646D532224A273B48C9D /* CoreTelephony.framework */; };
@@ -104,6 +115,7 @@
 		8314CDD21E8DCD9C00CAD026 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8314CDD41E8DCDB300CAD026 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		8314CDD61E8DCDBB00CAD026 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8314CDE31E8DE11900CAD026 /* m2048UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "m2048UITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A0B0C474C980C18CEBE18D25 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F521F93C4142EEE7BDDFD745 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -132,6 +144,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8314CDE21E8DD4E500CAD026 /* SystemConfiguration.framework in Frameworks */,
+				8314CDE11E8DD4D900CAD026 /* CoreTelephony.framework in Frameworks */,
+				8314CDE01E8DD4D200CAD026 /* CoreText.framework in Frameworks */,
+				8314CDDF1E8DD4CA00CAD026 /* Foundation.framework in Frameworks */,
+				8314CDDE1E8DD4C400CAD026 /* UIKit.framework in Frameworks */,
+				8314CDDD1E8DD4B800CAD026 /* CoreGraphics.framework in Frameworks */,
+				8314CDDC1E8DD4B300CAD026 /* AVFoundation.framework in Frameworks */,
+				8314CDDB1E8DD4AB00CAD026 /* AssetsLibrary.framework in Frameworks */,
+				8314CDDA1E8DD4A700CAD026 /* CoreMedia.framework in Frameworks */,
+				8314CDD91E8DD4A200CAD026 /* CoreVideo.framework in Frameworks */,
+				8314CDD81E8DD48800CAD026 /* BuddyBuildSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +322,7 @@
 			children = (
 				8314CDC91E8DB53400CAD026 /* m2048UITests.swift */,
 				8314CDCB1E8DB53400CAD026 /* Info.plist */,
+				8314CDE31E8DE11900CAD026 /* m2048UITests-Bridging-Header.h */,
 			);
 			path = m2048UITests;
 			sourceTree = "<group>";
@@ -359,6 +383,7 @@
 					8314CDC61E8DB53400CAD026 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L4FET847JL;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2443DC5118D662CA00C920C1;
 					};
@@ -594,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -614,6 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.m2048UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "m2048UITests/m2048UITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = m2048;
@@ -624,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -643,6 +671,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.buddybuild.m2048UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "m2048UITests/m2048UITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = m2048;
