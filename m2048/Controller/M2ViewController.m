@@ -174,7 +174,7 @@
   
   [UIView animateWithDuration:0.5 delay:1.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
     _overlay.alpha = 1;
-    _overlayBackground.alpha = 1;
+    _overlayBackground.alpha = 1
   } completion:^(BOOL finished) {
     // Freeze the current game.
     ((SKView *)self.view).paused = YES;
