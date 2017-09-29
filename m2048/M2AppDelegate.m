@@ -20,7 +20,7 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [BuddyBuildSDK uiTestRecordingDidReceiveRemoteNotification:userInfo];
+    [BuddyBuildSDK uiTestsDidReceiveRemoteNotification:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
